@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+/* Small View------------------------ */
+/* Min-Width: 300px */
+/*  */
+/*  */
+/* Nav Styling-------------------------------- */
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  margin-bottom: 15px;
+  background-color: #be3144;
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  font-size: 1.5rem;
+  /* overflow: hidden; */
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+#navbar li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+#navbar li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* End Nav Links---------------------------- */
+/*  */
+/*  */
+/*  */
+/* BEGIN SECTION STYLING-------------- */
+/*  */
+/*  */
+/*Snap Scrolling  ---*/
+/* Verify this is working?? */
+/* #main {
+  scroll-snap-type: y mandatory;
+}
+section {
+  scroll-snap-align: start;
+} */
+/* end Snap Scrolling */
+/*  */
+/*  */
+/* WELCOME SECTION -----------------------------------*/
+#welcome-section {
+  margin: auto;
+  margin-top: 70px;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(40deg, #393c3f, black);
+  text-align: center;
+  position: relative;
+}
+.section-elements {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#welcome-section h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+#welcome-section p {
+  color: #be3144;
+  font-size: 2rem;
+  font-weight: lighter;
+  padding-top: 1rem;
+}
+/* END WELCOME SECTION ------------------------------------*/
+/*  */
+/* BEGIN PROJECT SECTION ----------------------------------*/
+
+#projects {
+  width: 100%;
+  background-color: #45567d;
+  height: 135vh;
+}
+#project-header {
+  color: white;
+  padding-top: 140px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.7rem;
+}
+
+#projects-container {
+  margin: 30px 300px 0px 300px;
+}
+#projects-container div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0px 30px 0px 30px;
+}
+#projects-container div h3 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 1.24rem;
+  color: white;
+  background-color: #303841;
+  padding: 20px;
+  padding-right: 18px;
+  margin-top: 0;
+  font-weight: lighter;
+  width: 345px;
+}
+.project-footer {
+  margin: 0;
+}
+.project-thumbs {
+  vertical-align: -4px;
+}
+#projects-button {
+  text-align: center;
+}
+#projects-button button {
+  color: white;
+  padding: 16px 44px 16px 44px;
+  margin: 0;
+  font-size: 1.4rem;
+  background-color: #303841;
+}
+/* MOBILE VIEW (Less than 768px --------------------------*/
+@media only screen and (max-width: 768px) and (min-width: 0px) {
+  #projects {
+    height: 300vh;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1710px) {
+  #projects {
+    height: 180vh;
+  }
+}
+
+/* END PROJECTS SECTION-------------------------------- */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* BEGIN CONTACT SECTION-------------------------------- */
+@media only screen and (min-width: 1115px) {
+}
+/*
+} */
+#contact {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(45deg, #303841, #393c3f);
+  text-align: center;
+}
+#contact div h1 {
+  font-size: 3rem;
+  margin: 0 4px 6px 4px;
+}
+#contact div p {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #be3144;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+#contact ul {
+  margin-top: 200px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#contact li {
+  padding: 20px;
+}
+/* END CONTACT SECTION-------------------------------- */
+/*  */
+/* BEGIN FOOTER SECTION */
+#redline {
+  width: 100%;
+  height: 3px;
+  background-color: #be3144;
+}
+footer {
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+  font-size: 1.5rem;
+  background-image: linear-gradient(45deg, #303841, #393c3f);
+}
+footer p {
+  padding-top: 25px;
+}
